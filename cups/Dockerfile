@@ -5,9 +5,9 @@ FROM $BUILD_FROM
 
 ENV LANG C.UTF-8
 
-MAINTAINER Bouwe Westerdijk
+MAINTAINER Juan Pablo Giménez
 
-LABEL Description="CUPS for HA"
+LABEL Description="Home Assistant CUPS server"
 
 RUN \
 apk add --no-cache --virtual build-deps alpine-sdk cmake libusb-dev python3-dev cups cups-dev cups-libs cups-client

@@ -1,14 +1,17 @@
 {
-  "name": "CUPS for HA",
+  "name": "Home Assistant CUPS server",
   "version": "0.1",
   "slug": "ha_cups",
   "description": "BETA: Query network printer using cups",
-  "url": "https://github.com/bouwew/hassio-addons/tree/master/cups",
+  "url": "https://github.com/jpgimenez/hassio-addons/tree/master/cups",
   "startup": "before",
   "boot": "auto",
   "map": ["config:rw", "ssl"],
   "devices": ["/dev/bus/usb:/dev/bus/usb:rwm"],
   "host_network": "False",
+  "ports": {
+    "631/tcp": 631
+  },  
   "arch": [
     "aarch64",
     "amd64",
@@ -22,5 +25,6 @@
   "schema": {
      "flags": ["str"],
      "env_vars": ["str"]
-  }
+  },
+  "webui": "http://[HOST]:[PORT:631]"
 }
