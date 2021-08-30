@@ -8,9 +8,8 @@
   "boot": "auto",
   "map": ["config:rw", "ssl"],
   "devices": ["/dev/bus/usb:/dev/bus/usb:rwm"],
-  "host_network": "False",
   "ports": {
-    "631/tcp": 631
+    "631/tcp": null
   },  
   "arch": [
     "aarch64",
@@ -26,5 +25,6 @@
      "flags": ["str"],
      "env_vars": ["str"]
   },
+  "ingress": true,
   "webui": "http://[HOST]:[PORT:631]"
 }
