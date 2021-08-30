@@ -1,6 +1,6 @@
 {
   "name": "Home Assistant CUPS server",
-  "version": "0.1",
+  "version": "0.1.1",
   "slug": "ha_cups",
   "description": "BETA: Query network printer using cups",
   "url": "https://github.com/jpgimenez/hassio-addons/tree/master/cups",
